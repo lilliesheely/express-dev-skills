@@ -6,12 +6,10 @@
   </head>
   <body>
     <h1>Skills</h1>
-    <ul>
-      <% skills.forEach(function(s) { %>
+    <ul class="list">
+      <%skills.forEach(function(s){%>
         <li>
-          <a href="/skills/<%= s.id %>"><%= s.skills %></a>
-          - 
-          
+          <a href="/skills/<%= s.id %>"><%= s.skill %></a>
         </li>
       <% }); %>
     </ul>
