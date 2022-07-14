@@ -1,7 +1,7 @@
 const skills = [
-    {id: 675755, skill: "DOM", mastery: 5}, 
-    {id: 453344, skill: "Stubbing up a function", mastery: 4},
-    {id: 232322, skill: "Styling with CSS", mastery: 6,}
+    {id: 675755, skill: "DOM"}, 
+    {id: 453344, skill: "Stubbing up a function"},
+    {id: 232322, skill: "Styling with CSS"}
 ];
 
 module.exports = {
@@ -24,7 +24,7 @@ function getOne(id) {
 
 function create(skill) {
     skill.id = Date.now() % 1000000; 
-    skill.done = false; 
+    // skill.done = false; 
     skills.push(skill); 
 }
 

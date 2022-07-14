@@ -8,6 +8,10 @@ body {
   text-align: center;
 }
 
+nav > a {
+  color: purple;
+}
+
 a {
   color: #00B7FF;
 }
@@ -15,4 +19,9 @@ a {
 .list {
   list-style-type: none;
   padding: 4vh;
+}
+
+.addSkill {
+  font-size: 20px;
+  color: green;
 }
