@@ -1,12 +1,20 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Express Dev Skills</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= skill.skill %></h1>
- 
-  </body>
+<%- include('../partials/header') %>
 
-</html>
+    <h1><%= skill.skill %></h1>
+    <form action="/skills ?_method=DELETE"
+      method="POST"
+     
+    >
+      <button type="submit">X</button>
+    </form>
+
+
+    <form action="/skills" method="DELETE">
+      <input type="text" placeholder="Enter new To Do" name="todo">
+      <input type="submit" value="ADD TODO">
+    </form>
+    <h2><%= skill.id %></h2>
+    <h3>Mastery Level: <%= skill.mastery %></h3>
+    
+ 
+<%- include('../partials/footer') %>
